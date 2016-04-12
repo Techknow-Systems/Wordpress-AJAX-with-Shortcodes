@@ -39,7 +39,7 @@
     
     // Output the posts using the Architect plugin. Without lines 4-10, we could not do the code below, 
     // Or use WP_Query for that matter
-    $short = '[architect container-popular-top-2 ids="' . $postIDs . '"'];
+    $short = '[architect container-popular-top-2 ids="' . $postIDs . '"]';
     echo do_shortcode ($short);
 
   $data = ob_get_clean();
