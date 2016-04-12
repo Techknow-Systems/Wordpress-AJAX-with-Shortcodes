@@ -2,7 +2,9 @@
 
   // Set up the WP environment so we have access to the WP functions & shortcodes
 
-  // Get the absolute path of wp-load.php
+  // Get the absolute path of wp-load.php. This depends on the directory setup of your webserver. This code below
+  // is set for an implementation of wordpress sitting under a diretcory of "your_base_URL.com". If your WP install
+  // sits under "public_html" then change "your_base_URL.com" to "public_html"
   $yourBaseURL = 'your_base_URL.com';
   $absPath= getcwd();
   $WPpath = substr($absPath, 0, strpos($absPath, $yourBaseURL) + strlen($yourBaseURL) + 1) . 'wp-load.php';
